@@ -361,3 +361,5 @@ data.frame(pca_output$x, SAMPLE = rownames(pca_output$x)) %>%
   separate(SAMPLE, into = c("samplenames","sampletype"), sep = ";") %>%
     ggplot(aes(x = PC1, y = PC2, shape = sampletype, color)) +
     geom_point()
+
+?ggplot()
